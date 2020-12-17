@@ -8,7 +8,10 @@
   background-size: cover;
   background-position: center; 
 }
-#header .inner{
+#header.inner{
   height:100%;  
   vertical-align:middle;
+}
+#main_content.inner{
+  background-color: #FFFAFA;
 }
