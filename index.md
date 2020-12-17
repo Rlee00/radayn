@@ -10,7 +10,7 @@ In this digital age, social interactions have transcended the physical sphere to
 
 Let's first look at how many people are positive, negative or neutral on Twitter.
 
-{% include polarity_general.html %}
+{% include user_polarity.html %}
 
 It seems that so many people are so sad on Twitter :(.
 
