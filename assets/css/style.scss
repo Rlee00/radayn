@@ -4,14 +4,16 @@
 @import "jekyll-theme-slate";
 #header_wrap {
   height: 500px;
-  background-image:url('https://cbsnews1.cbsistatic.com/hub/i/2016/11/15/383d98b1-d9b7-446a-bb4b-a842ef209ba2/twitter.jpg');
+  background-image: url('https://cbsnews1.cbsistatic.com/hub/i/2016/11/15/383d98b1-d9b7-446a-bb4b-a842ef209ba2/twitter.jpg');
   background-size: cover;
   background-position: center; 
+  display: table;
 }
-#header.inner{
-  height:100%;  
-  vertical-align:middle;
+#header.inner{ 
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
 }
 #main_content_wrap.outer{
-  background-color: #FFFAFA;
+  background-color: #F0F8FF;
 }
