@@ -3,6 +3,7 @@ In this digital age, social interactions have transcended the physical sphere to
 
 ## How we handled the data?
 
+{% include trial2.html %}
 
 
 ## Are Twitter users positive people?
