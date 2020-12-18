@@ -27,7 +27,7 @@ Well narrowing in into individuals, we can see that some users can be crazily po
 
 Positive users seem to follow other positive users!.
 
-{% include polarity_network.html %}
+{% include homophily.html %}
 
 
 
