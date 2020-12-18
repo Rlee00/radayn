@@ -71,7 +71,7 @@
           var graph = graphElements[index];
           var setup = graphSetup[index];
           Plotly.plot(graph, {data: setup.data, layout: setup.layout, frames: setup.frames, 
-            config: {"showLink": true, "linkText": "Export to plotly.com"} 
+            config: {modeBarButtonsToRemove: ["select2d","lasso2d"], "showLink": true, "linkText": "Export to plotly.com"} 
           });
         }
         for (i=0; i < graphElements.length; i++) { plotGraph(i); }
