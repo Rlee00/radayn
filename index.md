@@ -6,7 +6,7 @@ In this digital age, social interactions have transcended the physical sphere to
 
 Let's first look at how many people are positive, negative or neutral on Twitter.
 
-{% include user_polarity.html %}
+{% include graph_polarity.html %}
 
 It seems that so many people are so sad on Twitter :(.
 
@@ -18,6 +18,6 @@ Well narrowing in into individuals, we can see that some users can be crazily po
 
 Positive users seem to follow other positive users!
 
-{% include homophily.html %}
+{% include graph_homophily.html %}
 
-{% include network.html %}
+{% include graph_network.html %}
