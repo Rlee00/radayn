@@ -146,6 +146,33 @@ config: {"showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToke
                 });
            }());
         </script>
-      
+        
+        <--! network.html -->
+        <script type="text/javascript">
+            (function(){
+                window.PLOTLYENV={'BASE_URL': 'https://plotly.com'};
+                var gd = document.getElementById('5cecb9bb-3333-4c94-ba38-36b75399e0ca')
+                var resizeDebounce = null;
+                function resizePlot() {
+                    var bb = gd.getBoundingClientRect();
+                    Plotly.relayout(gd, {
+                        width: bb.width,
+                        height: bb.height
+                    });
+                }
+                window.addEventListener('resize', function() {
+                    if (resizeDebounce) {
+                        window.clearTimeout(resizeDebounce);
+                    }
+                    resizeDebounce = window.setTimeout(resizePlot, 100);
+                });
+                Plotly.plot(gd,  {
+                    data: figure.data,
+                    layout: figure.layout,
+                    frames: figure.frames,
+                    config: {"showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A"}
+                });
+           }());
+        </script>
   </body>
 </html>
