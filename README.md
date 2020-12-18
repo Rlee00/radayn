@@ -1,11 +1,11 @@
-# Extension project by team radayn
-EPFL ADA 2020 P4 Milestone
+# EPFL ADA 2020 P4 Milestone
+## Extension project by team radayn
 Data story of socio-emotional interactions on Twitter
 
-# How figures are plotted
+## How figures are plotted
 Figures are plotted using Plotly Express on Python before being adjusted on Plotly Chart-studio
 
-# How to add figures
+## How to add figures
 1. From Plotly Chart-studio, export html file as zip archive
 2. Unzip the file
 3. Rename figure.js file as a unique figure file e.g. "graphSetup_uniquefilename.js"
