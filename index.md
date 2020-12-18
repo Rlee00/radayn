@@ -6,7 +6,7 @@ In this digital age, we are able to share our thoughts and ideas into the virtua
 
 > “The first rule of social media is that everything changes all the time. What won’t change is the community’s desire to network.” --- Kami Huyse, PR & social media strategist, entrepreneur, CEO Zoetica Media
 
-Encouraging this phenomenon are social media platforms such as Twitter. One can easily interact with others or spread content by retweeting it, replying to a Tweet or simply mention someone. With so much influence and interaction people can have on social media, it is interesting to further explore the tendency of individuals to bond with similar others. One such similarity could be the sentiment polarity (shortened to polarity) of the user based on their tweets which can be divided into 3 broad categories - Positive, Neutral and Negative.
+Encouraging this phenomenon are social media platforms such as Twitter. One can easily interact with others or spread content by retweeting it, replying to a tweet or simply mention someone. With so much influence and interaction people can have on social media, it is interesting to further explore the tendency of individuals to bond with similar others. One such similarity could be the sentiment polarity (shortened to polarity) of the user based on their tweets which can be divided into 3 broad categories - Positive, Neutral and Negative.
 
 ## Are Twitter users positive people?
 
