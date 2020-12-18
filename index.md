@@ -12,7 +12,7 @@ Let's first look at how many people are positive, negative or neutral in terms o
 
 {% include graph_polarity.html %}
 
-It seems that so many people are positive on Twitter :smiling_face_with_three_hearts:!
+It seems that so many people are positive on Twitter 🥰 !
 
 Well, this is not shocking. The polarity of a person's tweet matters. [Studies](https://buffer.com/resources/positivity-social-media/) have shown that positivity in social media wins in online interactions as people become less engaged when content on their feed becomes more negative. [With society being obssessed with influencers and younger people wishing to become influncers themselves](https://www.bloomberg.com/news/articles/2019-11-05/becoming-an-influencer-embraced-by-86-of-young-americans), craving for more followers and retweets to attain fame online would explain why people tweet more positively.
 
@@ -22,7 +22,7 @@ While we found that people are mainly posting positive tweets, how positive exac
 
 {% include graph_positive_users.html %}
 
-From this graph, we can see that the distribution of positive users skew towards low and moderate positive. This implies that positive tweets are not exactly screaming with joy and excitement :rofl: most of the time but perhaps more of a little giggle :grin: or a cheeky smile :slightly_smiling_face:.
+From this graph, we can see that the distribution of positive users skew towards low and moderate positive. This implies that positive tweets are not exactly screaming with joy and excitement 🤣 most of the time but perhaps more of a little giggle 😁 or a simple smile 🙂 .
 
 ## Do positives attract?
 
@@ -42,4 +42,12 @@ This network diagram allows us to visualise the 3 findings together. First, over
 
 To help you understand these results, here's how we gathered them.
 
-... by studying the socio-emotional division between Twitter users. This will be done by a sentiment analysis which evaluates the nature of tweets and hashtags - positive, neutral or negative. The polarity of shared content is then studied as a whole of the platform, each user as well as each users’ followers. Overall, we wish to understand if people tend to interact with others of similar polarity of sentiments.
+The major tool we used in our research is tweepy (an interface to access Twitter API), NLTK (NLP tool) and TextBlob (NLP tool). Our data crawling and preprocessing can be divided into several steps:
+
+Step 1: Select all users from original dataset in the paper "Testing Propositions Derived from Twitter Studies: Generalization and Replication in Computational Social Science"  and check their last update time.
+Step 2: Select the users who are still active (posting tweets) in 2020 and get their recent tweets (up to 200). The information we get includes the ID of tweets, created time, retweet count, favorite count, full text and language.
+Step 3: Select the users who have at least 100 English tweets and label them valid users.
+Step 4: Get the followees list of valid users.
+Step 5: Get recent tweets (up to 100) of these followees. Select those who have at least 100 English tweets and their tweets.
+Step 6: Perform basic NLP processing on the full text of tweets for both followees and valid users. Use NLTK and TextBlob predefined sentiment analysis models to compute the polarity of each tweet.
+Step 7: Calculate the average polarity of each valid user and each friend. Match valid users to friends and calculate the average friends polarity of each valid user.
