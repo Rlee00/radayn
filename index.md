@@ -2,9 +2,12 @@ Tweet! Tweet! Tweet!
 
 That's not the sound of a bird but rather a friend telling me to immediately post the joke I just told her onto my Twitter page.
 
-In this digital age, we are able to share our thoughts and ideas into the virtual space with the click of a button from a variety of digital devices. According to a Pew Research Center study in 2018, 88% of respondents between the ages of 18 to 29 reported using some kind of social media. The number is 78% for 30- to 49-year-olds which is lower but still significant. On top of being able to interact with our friends from the real world online, we can also find new friends in the virtual space. For some people, social interactions have transcended the physical sphere to the virtual one. 
+In this digital age, we are able to share our thoughts and ideas into the virtual space with the click of a button from a variety of digital devices. According to a Pew Research Center study in 2018, 88% of respondents between the ages of 18 to 29 reported using some kind of social media. The number is 78% for 30- to 49-year-olds which is lower but still significant. On top of being able to interact with our friends from the real world online, we can also find new friends in the virtual space. For some people, social interactions have transcended the physical sphere to the virtual one.
 
-Encouraging this phenomenon are social media platforms such as Twitter. One can easily interact with others or spread content by retweeting it, replying to a Tweet or simply mention someone. With so much influence and interaction people can have on social media, it is interesting to further explore the tendency of individuals to bond with similar others. One such similarity could be the sentiment of the user which can be divided into 3 broad categories - Positive, Neutral and Negative.
+> “The first rule of social media is that everything changes all the time. What won’t change is the community’s desire to network.” 
+--- Kami Huyse, PR & social media strategist, entrepreneur, CEO Zoetica Media
+
+Encouraging this phenomenon are social media platforms such as Twitter. One can easily interact with others or spread content by retweeting it, replying to a Tweet or simply mention someone. With so much influence and interaction people can have on social media, it is interesting to further explore the tendency of individuals to bond with similar others. One such similarity could be the sentiment polarity (shortened to polarity) of the user based on their tweets which can be divided into 3 broad categories - Positive, Neutral and Negative.
 
 ## Are Twitter users positive people?
 
