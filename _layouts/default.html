@@ -50,14 +50,16 @@
     <script type="text/javascript" src="graphSetup_network.js"></script>
     <script type="text/javascript" src="graphSetup_homophily.js"></script>
     <script type="text/javascript" src="graphSetup_polarity.js"></script>
+    <script type="text/javascript" src="graphSetup_positive_users.js"></script>
     <script type="text/javascript">
       (function(){
         window.PLOTLYENV={'BASE_URL': 'https://plotly.com'};
         var graph_network = document.getElementById('graph_network');
         var graph_homophily = document.getElementById('graph_homophily');
         var graph_polarity = document.getElementById('graph_polarity');
-        var graphElements = [graph_network, graph_homophily, graph_polarity];
-        var graphSetup = [graphSetup_network, graphSetup_homophily, graphSetup_polarity];
+        var graph_positive_users = document.getElementById('graph_positive_users');
+        var graphElements = [graph_network, graph_homophily, graph_polarity, graph_positive_users];
+        var graphSetup = [graphSetup_network, graphSetup_homophily, graphSetup_polarity, graphSetup_positive_users];
         var resizeDebounce = null;
         function resizePlot(graph) { 
           var bb = graph.getBoundingClientRect(); 
@@ -79,6 +81,7 @@
         for (i=0; i < graphElements.length; i++) { plotGraph(i); }
      }());
     </script>
+    
     
   </body>
 </html>
