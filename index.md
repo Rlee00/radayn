@@ -14,13 +14,20 @@ Let's first look at how many people are positive, negative or neutral in terms o
 
 It seems that so many people are positive on Twitter :D!
 
-Well, this is not shocking. The polarity of a person's tweet matters. [Studies] (https://buffer.com/resources/positivity-social-media/) have shown that positivity in social media wins in online interactions as people become less engaged when content on their feed becomes more negative. [With society being obssessed with influencers and younger people wishing to become influncers themselves] (https://www.bloomberg.com/news/articles/2019-11-05/becoming-an-influencer-embraced-by-86-of-young-americans), craving for more followers and retweets to attain fame online would explain why people tweet more positively.
+Well, this is not shocking. The polarity of a person's tweet matters. [Studies](https://buffer.com/resources/positivity-social-media/) have shown that positivity in social media wins in online interactions as people become less engaged when content on their feed becomes more negative. [With society being obssessed with influencers and younger people wishing to become influncers themselves](https://www.bloomberg.com/news/articles/2019-11-05/becoming-an-influencer-embraced-by-86-of-young-americans), craving for more followers and retweets to attain fame online would explain why people tweet more positively.
+
+## How positive are positive people?
+
+
 
 ## Do positives attract?
 
-Positive users seem to follow other positive users!
+Would a positive person tend to follow other positive people? 
 
 {% include graph_homophily.html %}
+
+From what we found, users tend to follow other users of the same polarity! This means that a positive person is more likely to follow other positive people and a negative person is more likely to follow other negative people.
+
 
 {% include graph_network.html %}
 
