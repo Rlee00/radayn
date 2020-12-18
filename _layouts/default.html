@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-
+  
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
-{% seo %}
+    {% seo %}
   </head>
 
   <body>
-        <script type="text/javascript" src="plotlyjs-bundle.js"></script>
-        <script type="text/javascript" src="figure.js"></script>
-
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-
-
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
         </header>
     </div>
 
@@ -44,7 +31,6 @@
         {% if site.github.is_project_page %}
         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
@@ -59,98 +45,38 @@
       </script>
     {% endif %}
     
-        <--! trial.html -->
-        <script type="text/javascript">
-(function(){
-window.PLOTLYENV={'BASE_URL': 'https://plotly.com'};
-var gd = document.getElementById('95fa527c-384d-4e33-b5d9-e4a357e17c58')
-var resizeDebounce = null;
-function resizePlot() {
-var bb = gd.getBoundingClientRect();
-Plotly.relayout(gd, {
-width: bb.width,
-height: bb.height
-});
-}
-Plotly.plot(gd,  {
-data: figure.data,
-layout: figure.layout,
-frames: figure.frames,
-config: {"showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A"}
-});               
-}());
-</script>
-        
-    <--! user_polarity.html -->
-      <script type="text/javascript">
-            (function(){
-                window.PLOTLYENV={'BASE_URL': 'https://plotly.com'};
-                var gd = document.getElementById('bb76dae1-a4be-4241-9e21-4c908562ee2d')
-                var resizeDebounce = null;
-                function resizePlot() {
-                    var bb = gd.getBoundingClientRect();
-                    Plotly.relayout(gd, {
-                        width: bb.width,
-                        height: bb.height
-                    });
-                }
-                Plotly.plot(gd,  {
-                    data: figure.data,
-                    layout: figure.layout,
-                    frames: figure.frames,
-                    config: {"showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A"}
-                });
-           }());
-        </script>
-     
-      <--! homophily.html --> 
-      <script type="text/javascript">
-            (function(){
-                window.PLOTLYENV={'BASE_URL': 'https://plotly.com'};
-                var gd = document.getElementById('7c74c450-525c-4d0b-8bef-d10942ff2eb7')
-                var resizeDebounce = null;
-                function resizePlot() {
-                    var bb = gd.getBoundingClientRect();
-                    Plotly.relayout(gd, {
-                        width: bb.width,
-                        height: bb.height
-                    });
-                }  
-                Plotly.plot(gd,  {
-                    data: figure.data,
-                    layout: figure.layout,
-                    frames: figure.frames,
-                    config: {"showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A"}
-                });
-           }());
-        </script>
-        
-        <--! network.html -->
-        <script type="text/javascript">
-            (function(){
-                window.PLOTLYENV={'BASE_URL': 'https://plotly.com'};
-                var gd = document.getElementById('5cecb9bb-3333-4c94-ba38-36b75399e0ca')
-                var resizeDebounce = null;
-                function resizePlot() {
-                    var bb = gd.getBoundingClientRect();
-                    Plotly.relayout(gd, {
-                        width: bb.width,
-                        height: bb.height
-                    });
-                }
-                window.addEventListener('resize', function() {
-                    if (resizeDebounce) {
-                        window.clearTimeout(resizeDebounce);
-                    }
-                    resizeDebounce = window.setTimeout(resizePlot, 100);
-                });
-                Plotly.plot(gd,  {
-                    data: figure.data,
-                    layout: figure.layout,
-                    frames: figure.frames,
-                    config: {"showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A"}
-                });
-           }());
-        </script>
+    <!--PLOTLY GRAPHS -->
+    <script type="text/javascript" src="plotlyjs-bundle.js"></script>
+    <script type="text/javascript" src="graphSetup_network.js"></script>
+    <script type="text/javascript" src="graphSetup_homophily.js"></script>
+    <script type="text/javascript" src="graphSetup_polarity.js"></script>
+    <script type="text/javascript">
+      (function(){
+        window.PLOTLYENV={'BASE_URL': 'https://plotly.com'};
+        var graph_network = document.getElementById('graph_network');
+        var graph_homophily = document.getElementById('graph_homophily');
+        var graph_polarity = document.getElementById('graph_polarity');
+        var graphElements = [graph_network, graph_homophily, graph_polarity];
+        var graphSetup = [graphSetup_network, graphSetup_homophily, graphSetup_polarity];
+        var resizeDebounce = null;
+        function resizePlot(graph) { 
+          var bb = graph.getBoundingClientRect(); 
+          Plotly.relayout(graph, {width: bb.width, height: bb.height}); 
+        }
+        window.addEventListener('resize', function() {
+            if (resizeDebounce) { window.clearTimeout(resizeDebounce); }
+            resizeDebounce = window.setTimeout(graphElements.forEach(resizePlot), 100);
+        });
+        function plotGraph(index) {
+          var graph = graphElements[index];
+          var setup = graphSetup[index];
+          Plotly.plot(graph, {data: setup.data, layout: setup.layout, frames: setup.frames, 
+            config: {"showLink": true, "linkText": "Export to plotly.com"} 
+          });
+        }
+        for (i=0; i < graphElements.length; i++) { plotGraph(index); }
+     }());
+    </script>
+    
   </body>
 </html>
