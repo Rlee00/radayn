@@ -70,7 +70,9 @@
         function plotGraph(index) {
           var graph = graphElements[index];
           var setup = graphSetup[index];
-          Plotly.plot(graph, {data: setup.data, layout: setup.layout, frames: setup.frames, 
+          var layout = setup.layout;
+          layout["dragmode"] = "pan";
+          Plotly.plot(graph, {data: setup.data, layout: layout, frames: setup.frames, 
             config: {modeBarButtonsToRemove: ["select2d","lasso2d"], "showLink": true, "linkText": "Export to plotly.com"} 
           });
         }
