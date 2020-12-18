@@ -1,5 +1,5 @@
 # EPFL ADA 2020 P4 Milestone
-## Extension project by team radayn
+## Project by team RadaYN
 Data story of socio-emotional interactions on Twitter
 
 ## How figures are plotted
