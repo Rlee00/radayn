@@ -44,10 +44,10 @@ To help you understand these results, here's how we gathered them.
 
 The major tool we used in our research is tweepy (an interface to access Twitter API), NLTK (NLP tool) and TextBlob (NLP tool). Our data crawling and preprocessing can be divided into several steps:
 
-Step 1: Select all users from original dataset in the paper "Testing Propositions Derived from Twitter Studies: Generalization and Replication in Computational Social Science"  and check their last update time.
-Step 2: Select the users who are still active (posting tweets) in 2020 and get their recent tweets (up to 200). The information we get includes the ID of tweets, created time, retweet count, favorite count, full text and language.
-Step 3: Select the users who have at least 100 English tweets and label them valid users.
-Step 4: Get the followees list of valid users.
-Step 5: Get recent tweets (up to 100) of these followees. Select those who have at least 100 English tweets and their tweets.
-Step 6: Perform basic NLP processing on the full text of tweets for both followees and valid users. Use NLTK and TextBlob predefined sentiment analysis models to compute the polarity of each tweet.
-Step 7: Calculate the average polarity of each valid user and each friend. Match valid users to friends and calculate the average friends polarity of each valid user.
+* **Step 1:** Select all users from original dataset in the paper "Testing Propositions Derived from Twitter Studies: Generalization and Replication in Computational Social Science"  and check their last update time.
+* **Step 2:** Select the users who are still active (posting tweets) in 2020 and get their recent tweets (up to 200). The information we get includes the ID of tweets, created time, retweet count, favorite count, full text and language.
+* **Step 3:** Select the users who have at least 100 English tweets and label them valid users.
+* **Step 4:** Get the followees list of valid users.
+* **Step 5:** Get recent tweets (up to 100) of these followees. Select those who have at least 100 English tweets and their tweets.
+* **Step 6:** Perform basic NLP processing on the full text of tweets for both followees and valid users. Use NLTK and TextBlob predefined sentiment analysis models to compute the polarity of each tweet.
+* **Step 7:** Calculate the average polarity of each valid user and each friend. Match valid users to friends and calculate the average friends polarity of each valid user.
