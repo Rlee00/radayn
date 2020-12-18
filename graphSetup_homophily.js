@@ -1,4 +1,4 @@
-var graphSetup_homiphily = {
+var graphSetup_homophily = {
     "data": [
         {
             "meta": {
