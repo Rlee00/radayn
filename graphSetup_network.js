@@ -461,7 +461,7 @@ var graphSetup_network = {
                 "colorbar": {
                     "title": {
                         "side": "right",
-                        "text": "Node Connections"
+                        "text": "Polarity"
                     },
                     "xanchor": "left",
                     "thickness": 10
