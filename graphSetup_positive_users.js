@@ -1,16 +1,22 @@
 var graphSetup_positive_users = {
     "data": [
         {
+            "meta": {
+                "columnNames": {
+                    "labels": "data.0.labels",
+                    "values": "data.0.values"
+                }
+            },
             "name": "",
             "type": "pie",
             "domain": {
                 "x": [
-                    0.0,
-                    1.0
+                    0,
+                    1
                 ],
                 "y": [
-                    0.0,
-                    1.0
+                    0,
+                    1
                 ]
             },
             "labelssrc": "Rlee00:28:1e7431",
@@ -27,16 +33,32 @@ var graphSetup_positive_users = {
             ],
             "showlegend": true,
             "legendgroup": "",
-            "hovertemplate": "Kind of person=%{label}<br>user_id=%{value}<extra></extra>"
+            "hovertemplate": ""
         }
     ],
     "layout": {
+        "title": {
+            "text": "Distribution of positive people"
+        },
         "legend": {
             "tracegroupgap": 0
         },
         "margin": {
             "t": 60
         },
+        "autosize": true,
+        "colorway": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#d62728",
+            "#9467bd",
+            "#8c564b",
+            "#e377c2",
+            "#7f7f7f",
+            "#bcbd22",
+            "#17becf"
+        ],
         "template": {
             "data": {
                 "bar": [
@@ -120,7 +142,7 @@ var graphSetup_positive_users = {
                         },
                         "colorscale": [
                             [
-                                0.0,
+                                0,
                                 "#0d0887"
                             ],
                             [
@@ -156,7 +178,7 @@ var graphSetup_positive_users = {
                                 "#fdca26"
                             ],
                             [
-                                1.0,
+                                1,
                                 "#f0f921"
                             ]
                         ]
@@ -171,7 +193,7 @@ var graphSetup_positive_users = {
                         },
                         "colorscale": [
                             [
-                                0.0,
+                                0,
                                 "#0d0887"
                             ],
                             [
@@ -207,7 +229,7 @@ var graphSetup_positive_users = {
                                 "#fdca26"
                             ],
                             [
-                                1.0,
+                                1,
                                 "#f0f921"
                             ]
                         ]
@@ -233,7 +255,7 @@ var graphSetup_positive_users = {
                         },
                         "colorscale": [
                             [
-                                0.0,
+                                0,
                                 "#0d0887"
                             ],
                             [
@@ -269,7 +291,7 @@ var graphSetup_positive_users = {
                                 "#fdca26"
                             ],
                             [
-                                1.0,
+                                1,
                                 "#f0f921"
                             ]
                         ]
@@ -295,7 +317,7 @@ var graphSetup_positive_users = {
                         },
                         "colorscale": [
                             [
-                                0.0,
+                                0,
                                 "#0d0887"
                             ],
                             [
@@ -331,7 +353,7 @@ var graphSetup_positive_users = {
                                 "#fdca26"
                             ],
                             [
-                                1.0,
+                                1,
                                 "#f0f921"
                             ]
                         ]
@@ -416,7 +438,7 @@ var graphSetup_positive_users = {
                         },
                         "colorscale": [
                             [
-                                0.0,
+                                0,
                                 "#0d0887"
                             ],
                             [
@@ -452,7 +474,7 @@ var graphSetup_positive_users = {
                                 "#fdca26"
                             ],
                             [
-                                1.0,
+                                1,
                                 "#f0f921"
                             ]
                         ]
@@ -531,7 +553,7 @@ var graphSetup_positive_users = {
                         },
                         "colorscale": [
                             [
-                                0.0,
+                                0,
                                 "#0d0887"
                             ],
                             [
@@ -567,7 +589,7 @@ var graphSetup_positive_users = {
                                 "#fdca26"
                             ],
                             [
-                                1.0,
+                                1,
                                 "#f0f921"
                             ]
                         ]
@@ -742,7 +764,7 @@ var graphSetup_positive_users = {
                     ],
                     "sequential": [
                         [
-                            0.0,
+                            0,
                             "#0d0887"
                         ],
                         [
@@ -778,13 +800,13 @@ var graphSetup_positive_users = {
                             "#fdca26"
                         ],
                         [
-                            1.0,
+                            1,
                             "#f0f921"
                         ]
                     ],
                     "sequentialminus": [
                         [
-                            0.0,
+                            0,
                             "#0d0887"
                         ],
                         [
@@ -820,7 +842,7 @@ var graphSetup_positive_users = {
                             "#fdca26"
                         ],
                         [
-                            1.0,
+                            1,
                             "#f0f921"
                         ]
                     ]
