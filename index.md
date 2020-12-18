@@ -18,7 +18,11 @@ Well, this is not shocking. The polarity of a person's tweet matters. [Studies](
 
 ## How positive are positive people?
 
+While we found that people are mainly posting positive tweets, how positive exactly are they?
 
+{% include graph_positive_users.html %}
+
+From this graph, we can see that the distribution of positive users skew towards highly positive.
 
 ## Do positives attract?
 
@@ -28,6 +32,7 @@ Would a positive person tend to follow other positive people?
 
 From what we found, users tend to follow other users of the same polarity! This means that a positive person is more likely to follow other positive people and a negative person is more likely to follow other negative people.
 
+A closer look into a single user is presented below.
 
 {% include graph_network.html %}
 
