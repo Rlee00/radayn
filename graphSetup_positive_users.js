@@ -1,4 +1,4 @@
-var figure = {
+var graphSetup_positive_users = {
     "data": [
         {
             "name": "",
